@@ -1,0 +1,32 @@
+{{#each list}}
+<div class="card-sub{{#if is_featured_video}} movie{{/if}}">
+	{{#if thumbnail}}
+	<figure class="card-sub-thumb">
+		<a href="{{permalink}}" title="{{{title}}}">
+			{{{thumbnail}}}
+		</a>
+	</figure>
+	{{/if}}
+
+	<div class="card-sub-info">
+		<h3 class="card-sub-title">
+			<a href="{{permalink}}" title="{{{title}}}">{{{title}}}</a>
+		</h3>
+		<small class="card-sub-author">{{{author}}}</small>
+		<span class="card-sub-date">{{date}}</span>
+	</div>
+	<div class="share-card">
+		<i class="icon-share"></i>
+		<div class="share-card-wrapper">
+			<div class="share-card-itens">
+				<a href="" title=""><i class="icon-facebook"></i></a>
+				<a href="" title=""><i class="icon-pinterest"></i></a>
+				<a href="" title=""><i class="icon-google"></i></a>
+				<a href="" title=""><i class="icon-twitter"></i></a>
+				<a href="" title=""><i class="icon-whatsapp"></i></a>
+			</div>
+		</div>
+	</div>
+	<span class="shadow"></span>
+</div>
+{{/each}}

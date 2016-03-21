@@ -1,0 +1,21 @@
+<div class="mega-menu-mobile-slider">
+	<div data-component="swiper" data-attr='{"slidesPerView":"auto" }' style="width: {{innerWidth}}px;">
+		<div class="swiper-wrapper">
+			{{#each this}}
+			<div class="swiper-slide">
+				<div class="news-small{{#if is_featured_video}} movie{{/if}}">
+					{{#if has_thumbnail}}
+					<figure class="news-small-thumbnail">
+						{{{thumbnail}}}
+					</figure>
+					{{/if}}
+					<div class="news-small-excerpt">
+						<h2 class="news-small-title">{{category_name}}</h2>
+						<p>{{{title}}}</p>
+					</div>
+				</div>
+			</div>
+			{{/each}}
+		</div>
+	</div>
+</div>
